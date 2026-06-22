@@ -353,7 +353,7 @@ function bell(){
 function setDrone(active){ if(droneGain) droneGain.gain.setTargetAtTime(active&&on?.42:0,actx.currentTime,.7); }
 function toggle(){ on=!on; setDrone(on); return on; }
 function isOn(){ return on; }
-return {init, tone, chord, setDrone, toggle, isOn};
+return {init, tone, chord, bell, setDrone, toggle, isOn};
 })();
 </script>
 
